@@ -1,0 +1,72 @@
+<div style="align:center">
+<h1 align="center">Twitter Simulation</h1>
+<div id="login-page">
+ 
+<form id="login-form" class="login-form">
+  <input type="text" placeholder="Username" id="user-name"></input>
+  <%# <textarea placeholder="Password" id="user-password"></textarea> %>
+  <button id="myBtn-register" type ="submit">Sign up</button>
+</form>
+
+
+<!-- Form to Subscribe to another user. -->
+<form id ="add_subscriber-form" class ="add_subscriber-form">
+    <input type = "text" placeholder = "Enter UserHandle to Follow/Subscribe" id="subcribe-name"> </input>
+    <button id="myBtn-subscribe" type ="submit"> Follow</button>
+  </form>
+
+
+
+<!-- Form to Tweet. -->
+<form id="tweet-form" class="tweet-form">     <!-- This form can be used to tweet with Hashtag, Tweet with mention and also normal tweet -->
+
+  <input type="text" placeholder="Tweet" id="tweet-name"></input>
+  <%# <textarea placeholder="Password" id="user-password"></textarea> %>
+  <button id="myBtn-tweet" type="submit">Tweet</button>
+</form>
+
+
+
+
+<!-- Form to get all tweet by a particular # -->
+<form id="query_hashtag-form" class="query_hashtag-form">
+    <input type="text" placeholder="Hashtag" id="hashtag-name"></input>
+    <button type="submit">Search Tweets By Hashtag </button>  
+</form>
+
+
+<!-- Form to get tweets by mention -->
+<form id="query_mention-form" class="query_mention-form">
+    <input type="text" placeholder="Mention " id="mentions-name"> </input>
+    <button type="submit">Search Tweets by Mention </button>  
+</form>
+
+
+
+</div>
+</div>
+
+<table>
+  <tr>
+    <th>Activity Logs</th>
+    <th>Feeds</th>
+    <th>Query results for hashtags</th>
+    <th>Query results for mentions</th>
+  </tr>
+  <tr>
+    <td valign="top">
+      <div class="success-class" id = "trial_id"> </div>
+      <div class="success-class" id = "follow_success"> </div>
+    </td>
+    <td valign="top">
+      <div class="success-class" id = "tweet_subs"> </div>
+      <div class="success-class" id = "tweet_div"> </div>
+    </td>
+    <td valign="top">
+      <div class="success-class" id = "hash_div"> </div>
+    </td>
+    <td valign="top">
+      <div class="success-class" id = "mention_div"> </div>
+    </td>
+  </tr>
+</table>
